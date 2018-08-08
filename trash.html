@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Project 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Mailman</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="login.html">Home</a></li>
+                    <li class="active"><a href="inbox.html">Mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<body style="background-color: lightgray">
+<div class="w3-sidebar w3-dark-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item"></h3>
+    <a href="inbox.html" class="w3-bar-item w3-button">Inbox<span class="badge">3</span></a><br>
+    <a href="trash.html" class="w3-bar-item w3-button">Trash<span class="badge">2</span></a><br>
+    <a href="spam.html" class="w3-bar-item w3-button">Spam<span class="badge">1</span></a><br>
+    <a href="message.html" class="w3-bar-item w3-button">Compose New Message</a><br>
+</div>
+
+<div style="margin-left:25%">
+
+    <div class="w3-container">
+        <h1><strong>Trash</strong></h1>
+    </div>
+
+    <div class="w3-container">
+        <table style="width:100%">
+            <tr>
+                <th></th>
+                <th><h4><strong>Sender</strong></h4><hr></th>
+                <th><h4><strong>Title</strong></h4><hr></th>
+                <th><h4><strong>Received</strong></h4><hr></th>
+            </tr>
+            <tr>
+                <td><div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                </div></td>
+                <td>Eddie Lacy<hr></td>
+                <td>Trade Update<hr></td>
+                <td>January 29, 2017<hr></td>
+            </tr>
+            <tr>
+                <td><div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    </label>
+                </div></td>
+                <td>Geronimo Allison<hr></td>
+                <td>Making the Team<hr></td>
+                <td>January 29, 2017<hr></td>
+            </tr>
+        </table>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-info">Restore Message</button>
+            <button type="button" class="btn btn-warning">Restore All Messages</button>
+            <button type="button" class="btn btn-danger">Empty Trash</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

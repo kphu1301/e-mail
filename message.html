@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Project 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Mailman</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="login.html">Home</a></li>
+                    <li class="active"><a href="inbox.html">Mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<body style="background-color: lightgray">
+<div class="w3-sidebar w3-dark-grey w3-bar-block" style="width:25%">
+    <h3 class="w3-bar-item"></h3>
+    <a href="inbox.html" class="w3-bar-item w3-button">Inbox<span class="badge">3</span></a><br>
+    <a href="trash.html" class="w3-bar-item w3-button">Trash<span class="badge">2</span></a><br>
+    <a href="spam.html" class="w3-bar-item w3-button">Spam<span class="badge">1</span></a><br>
+    <a href="message.html" class="w3-bar-item w3-button">Compose New Message</a><br>
+</div>
+<div style="margin-left:25%">
+
+    <div class="w3-container">
+        <h1><strong>Compose New Message</strong></h1>
+    </div>
+
+    <div class="w3-container">
+        <form action="success.html" method="get" enctype="text/plain">
+            Recipient:<br>
+            <input type="text" name="name"><br>
+            Title:<br>
+            <input type="text" name="mail"><br>
+            Body:<br>
+            <input class="form-control input-lg" id="inputlg" type="text" name="body" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-info">Move to Inbox</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
